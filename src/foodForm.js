@@ -12,10 +12,10 @@ const FoodForm =({navigation})=>{
   return (
     <View style={styles.container}>
 
-      <Text style={styles.title}>Food Form</Text>
+      <Text style={styles.title}>Shopping List</Text>
       <TextInput
         value={food}
-        placeholder='Name'
+        placeholder='Enter Item'
         style={styles.foodInput}
         onChangeText={(food) => setFood(food)}
       />
@@ -25,12 +25,12 @@ const FoodForm =({navigation})=>{
         submitFood(food)
         setFood('')
         }}>
-        <Text style={{ fontSize: 22, color: '#5fc9f8' }}>Submit</Text>
+        <Text style={{ fontSize: 22, color: 'black' }}>Submit</Text>
       </TouchableOpacity>
       <TouchableOpacity
         style={{ marginBottom: 16 }}
         onPress={() => navigation.navigate('FoodList')}>
-        <Text style={{ fontSize: 22, color: 'white' }}>Go to FoodList</Text>
+        <Text style={{ fontSize: 22, color: 'black' }}>Go to Shopping List</Text>
       </TouchableOpacity>
     </View>
   );
@@ -40,7 +40,7 @@ const FoodForm =({navigation})=>{
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#212121',
+    backgroundColor: 'beige',
     alignItems: 'center',
     justifyContent: 'center'
   },
@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
     fontSize: 48,
     marginBottom: 30,
     marginTop: 16,
-    color: 'white'
+    color: 'black'
   },
   foodInput: {
     fontSize: 24,
@@ -67,7 +67,6 @@ const styles = StyleSheet.create({
     borderRadius: 100,
   }
 });
-
 
 
 export default FoodForm;

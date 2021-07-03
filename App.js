@@ -13,8 +13,8 @@ export default AppStack = () =>
         name="FoodForm"
         component={FoodForm}
         options={{
-          title: 'Cheetah Coding',
-          headerTintColor: 'orange',
+          title: 'EasyShop App',
+          headerTintColor: 'aqua',
           headerStyle: {
             backgroundColor: 'black'
           }
@@ -24,6 +24,7 @@ export default AppStack = () =>
         name="FoodList"
         component={FoodList}
         options={{
+          title: 'Shopping List',
           headerTintColor: 'orange',
           headerStyle: {
             backgroundColor: 'black'
